@@ -4,11 +4,12 @@ import NewsArticle from "./NewsArticle";
 
 function News(props) {
   const { data } = useContext(NewsContext);
+  console.log(data);
   return (
     <div className="main-blog">
       <div className="main-blog__main">
         {data
-          ? data.articles.map((news) => (
+          ? data.results.map((news) => (
               <NewsArticle data={news} key={news.url} />
             ))
           : "Loding...."}
