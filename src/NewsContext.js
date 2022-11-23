@@ -10,7 +10,7 @@ console.log("====================================");
 useEffect(() => {
   axios
     .get(
-      `https://newsdata.io/api/1/news?apikey=${apikey}&country=in,au&category=technology&language=en`
+      `https://newsdata.io/api/1/news?apikey=${apikey}&category=technology&language=en`
     )
     .then((response) => setData(response.data))
     .catch((error) => error);
