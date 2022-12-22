@@ -6,19 +6,10 @@ function App() {
   console.log("Made With Love ❤️❤️❤️");
   return (
     <NewsContextProvider>
-      <Marquee
-        speed="100"
-        pauseOnHover="true"
-        style={{
-          height: "8vh",
-          fontSize: "1.6rem",
-        }}
-      >
-        Breaking News Breaking News Breaking News Breaking News Breaking News
-        Breaking News Breaking News Breaking News Breaking News Breaking News
-        Breaking News Breaking News Breaking News
-      </Marquee>
       <News />
+      <a href="https://maligaurav947.github.io/Portfolio/" className="me">
+        me
+      </a>
     </NewsContextProvider>
   );
 }
