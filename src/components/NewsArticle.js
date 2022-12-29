@@ -21,17 +21,9 @@ function NewsArticle({ data }) {
       <MDBCardSubTitle className="news__desc line-limit h3 ps-2 pe-2">
         {data.description}
       </MDBCardSubTitle>
-      <MDBBtn
-        href={data.link}
-        target={"_blank"}
-        className="w-25"
-        style={{
-          height: "40px",
-          fontSize: "1.6rem",
-        }}
-      >
+      <button href={data.link} target={"_blank"} className="w-25 button-30">
         Learn More
-      </MDBBtn>
+      </button>
     </MDBCard>
   );
 }
